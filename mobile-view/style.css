@@ -1,0 +1,144 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.container{
+	position: relative;
+	width: calc(100% - 20px);
+	height: 550px;
+	background: #fc0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container .box{
+	position: relative;
+	width: 280px;
+	height: calc(100% - 4px);
+	background: #fff;
+	margin: 2px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	z-index: 1;
+}
+.container .box .blue-box{
+	background: #eff;
+	width: calc(100% - 50px);
+	padding: 5px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.container .box .title{
+	font-size: 18px;
+	font-weight: bold;
+	width: 140px;
+	text-align: center;
+	margin: 30px 0;
+	margin-bottom: 40px;
+}
+.container .box .initial{
+	font-weight: bold;
+	font-size: 16px;
+}
+.footer{
+	width: calc(100% - 20px);
+	height: 50px;
+	background: #fc0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	visibility: hidden;
+	position: absolute;
+}
+
+.container .box#new:before{
+	content: 'New';
+	position: absolute;
+	width: 80px;
+	height: 20px;
+	top: 0;
+	left: 0;
+	color: #000;
+	z-index: 2;
+	background: #fc0;
+	text-align: center;
+	padding: 2px;
+	clip-path: polygon(30% 0, 70% 0, 100% 100%, 0 100%);
+	transform: translate(-22px,8px) rotate(-45deg);
+
+}
+.container .box .price{
+	font-weight: bold;
+	font-size: 60px;
+}
+.container .box .price span{
+	position: relative;
+	font-size: 30px;
+	top: -20px;
+}
+.container .box .fees{
+	color: blue;
+	font-size: 15px;
+}
+.container .box .fees#all{
+	color: black;
+}
+.container .box .content{
+	padding: 15px 30px;
+	font-size: 15px;
+	line-height: 20px;
+}
+.container .box .know{
+	color: blue;
+	position: absolute;
+	bottom: 15px;
+}
+.footer{
+	width: calc(100% - 20px);
+	height: 50px;
+	background: #fc0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	visibility: hidden;
+	position: absolute;
+}
+.footer .circle{
+	width: 12px;
+	height: 12px;
+	background: rgba(150,150,150,0.5);
+	border-radius: 50%;
+	margin: 10px;
+	transform: translateY(10px);
+	cursor: pointer;
+}
+.footer .circle:first-child{
+	background: rgba(30,30,30,0.9);
+}
+@media(max-width: 980px){
+	.container .box{
+		position: absolute;
+		width: calc(100% - 4px);
+		height: calc(100% - 4px);
+	}
+	.footer{
+		visibility: visible;
+		position: relative;		
+	}
+} 
