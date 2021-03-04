@@ -119,7 +119,7 @@ body{
 	visibility: hidden;
 	position: absolute;
 }
-.footer .circle{
+.footer .loop{
 	width: 12px;
 	height: 12px;
 	background: rgba(150,150,150,0.5);
@@ -128,10 +128,10 @@ body{
 	transform: translateY(10px);
 	cursor: pointer;
 }
-.footer .circle:first-child{
+.footer .loop:first-child{
 	background: rgba(30,30,30,0.9);
 }
-@media(max-width: 980px){
+@media(max-width: 960px){
 	.container .box{
 		position: absolute;
 		width: calc(100% - 4px);
