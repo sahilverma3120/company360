@@ -10,13 +10,13 @@ box[0].style.zIndex=3;
 
 
 
-for(var i=0;i<circle.length;i++){
+for(var i=0;i<loop.length;i++){
 
-	circle[i].addEventListener('click',function(){
+	loop[i].addEventListener('click',function(){
 
-		for(var j=0;j<circle.length;j++){
+		for(var j=0;j<loop.length;j++){
 
-			circle[j].style.background= "rgba(150,150,150,0.5)";
+			loop[j].style.background= "rgba(150,150,150,0.5)";
 
 			box[j].style.zIndex=2;
 
